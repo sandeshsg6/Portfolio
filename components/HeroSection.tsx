@@ -41,6 +41,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="flex flex-row items-center text-center justify-center ">
+                <div>   
                 <Link
                     to="about"
                     activeClass="active"
@@ -49,10 +50,9 @@ const HeroSection = () => {
                     offset={-100}
                     duration={500}
                 >
-                    <>
                         <HiArrowDown size={35} className="animate-bounce" />
-                    </>
                 </Link>
+                </div>
             </div>
         </section>
     )
