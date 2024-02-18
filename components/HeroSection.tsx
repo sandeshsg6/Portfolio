@@ -40,7 +40,7 @@ const HeroSection = () => {
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-row items-center text-center justify-center ">
+            {/* <div className="flex flex-row items-center text-center justify-center ">
                 <Link
                     to="about"
                     activeClass="active"
@@ -53,6 +53,11 @@ const HeroSection = () => {
                         <HiArrowDown size={35} className="animate-bounce" />
                     </span>
                 </Link>
+            </div> */}
+            <div className="flex flex-row items-center text-center justify-center">
+                <span onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
+                    <HiArrowDown size={35} className="animate-bounce" />
+                </span>
             </div>
         </section>
     )
