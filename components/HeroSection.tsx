@@ -1,7 +1,7 @@
 "use client" // this is a client component
 import React from "react"
 import Image from "next/image"
-import { Link } from "react-scroll"
+import { Element, Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi"
 
 const HeroSection = () => {
@@ -49,9 +49,9 @@ const HeroSection = () => {
                     offset={-100}
                     duration={500}
                 >
-                    <div>
+                    <>
                         <HiArrowDown size={35} className="animate-bounce" />
-                    </div>
+                    </>
                 </Link>
             </div>
         </section>
