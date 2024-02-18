@@ -49,7 +49,7 @@ const HeroSection = () => {
                     offset={-100}
                     duration={500}
                 >
-                    <span><HiArrowDown size={35} className="animate-bounce" /></span>
+                    <React.Fragment><HiArrowDown size={35} className="animate-bounce" /></React.Fragment>
                 </Link>
             </div>
         </section>
