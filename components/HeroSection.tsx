@@ -1,7 +1,7 @@
 "use client" // this is a client component
 import React from "react"
 import Image from "next/image"
-import { Link } from "react-scroll";
+import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
 
 const HeroSection = () => {
@@ -40,7 +40,7 @@ const HeroSection = () => {
                     </Link>
                 </div>
             </div>
-            {/* <div className="flex flex-row items-center text-center justify-center ">
+            <div className="flex flex-row items-center text-center justify-center ">
                 <Link
                     to="about"
                     activeClass="active"
@@ -49,15 +49,8 @@ const HeroSection = () => {
                     offset={-100}
                     duration={500}
                 >
-                    <span onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
-                        <HiArrowDown size={35} className="animate-bounce" />
-                    </span>
-                </Link>
-            </div> */}
-            <div className="flex flex-row items-center text-center justify-center">
-                <span onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
                     <HiArrowDown size={35} className="animate-bounce" />
-                </span>
+                </Link>
             </div>
         </section>
     )
