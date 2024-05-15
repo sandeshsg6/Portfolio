@@ -1,10 +1,8 @@
 import React from "react"
-import { BsTelegram } from "react-icons/bs"
 import {
     AiOutlineGithub,
-    AiOutlineTwitter,
     AiOutlineLinkedin,
-    //   AiOutlineYoutube,
+    AiOutlineMail
 } from "react-icons/ai"
 
 const Footer = () => {
@@ -23,17 +21,6 @@ const Footer = () => {
                         />
                     </a>
                     <a
-                        href="https://telegram.dog/dronefill"
-                        rel="noreferrer"
-                        target="_blank"
-                    >
-                        <BsTelegram
-                            className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-                            size={30}
-                        />
-                    </a>
-
-                    <a
                         href="https://www.linkedin.com/in/sandeshsg6/"
                         rel="noreferrer"
                         target="_blank"
@@ -43,16 +30,16 @@ const Footer = () => {
                             size={30}
                         />
                     </a>
-                    {/* <a
-            href="https://www.linkedin.com/in/sandeshsg6/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineYoutube
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-              size={30}
-            />
-          </a> */}
+                    <a
+                        href="mailto:sandeshsg6@gmail.com? &body=Hi Sandesh!!"
+                        rel="noreferrer"
+                        target="_blank"
+                    >
+                        <AiOutlineMail
+                            className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+                            size={30}
+                        />
+                    </a>
                 </div>
             </div>
         </footer>
